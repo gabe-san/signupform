@@ -1,0 +1,166 @@
+@font-face{
+    font-family: odinFont;
+    src: url("fonts/Norse-Bold.otf")
+}
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1b1e1f;
+    border: 1px solid rgb(229, 231, 235,0.2);
+    border-radius: 1px;
+}
+
+html {
+    background-color: #1b1e1f;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+.container,
+.left,
+.right {
+    display: flex;
+}
+.container{
+    min-height: 80vh;
+    width: 70vw;
+    justify-content: space-between;
+    border: 1px solid rgba(245, 245, 245, 0.3);
+    border-radius: 10px;
+    margin: 70px;
+}
+.left {
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+    align-items: center;
+    width: 30%;
+}
+.icon-holder {
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.5);
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: odinFont;
+    font-size: 50px;
+}
+.icon::before {
+    content: "";
+    background-image: url("images/odin-lined.png");
+    background-size: 50px 70px;
+    display: inline-block;
+    width: 50px;
+    height: 70px;
+    margin-right: 5px;
+}
+.image-credit {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+a.credit:link {
+    color: white;
+}
+a.credit:visited {
+    color: white;
+}
+a.credit:hover {
+    color: aqua;
+}
+a.credit:active {
+    color: blue;
+}
+
+.right {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+    color: white;
+    margin-right: 20px;
+}
+.introduction {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#pwd:invalid,
+#confirmpwd:invalid {
+    border: 1px solid rgb(255, 0, 0,0.5);
+    border-radius: 2px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px -6px #888888;
+    width:100%;
+    
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+button {
+    padding: 10px;
+    border-radius:5px;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    width: 10rem;
+}
+
+a.log:link {
+    color: #596D48;
+    text-decoration: none;
+}
+
+a.log:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+a.log:hover {
+    color: aqua;
+    text-decoration: none;
+}
+a.log:active {
+    color: blue;
+    text-decoration: none;
+}
