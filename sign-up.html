@@ -8,47 +8,52 @@
     <link rel="stylesheet" href="sign-up.css">
 </head>
 <body>
-    <div>
-        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get <em>now</em> to get started
+    <div class="container">
+        <div class="left">
+            <div>
+                <p>Odin</p>
+            </div>
+            <div>Photo by on Unsplash</div>
+        </div>
+        <div class="right">
+            <div class="introduction">
+                <p>
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get <em>now</em> to get started
+                </p>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
+            </div>
+            <form>
+                <h3>Let's do this!</h3>
+                <p>
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name" />
+                </p>
+                <p>
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" />
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" />
+                </p>
+                <p>
+                    <label for="phone_number">Phone Number</label>
+                    <input type="tel" id="phone_number" name="phone_number" />
+                </p>
+                <p>
+                    <label for="pwd">Password</label>
+                    <input type="password" id="pwd" name="pwd" required />
+                </p>
+                <p>
+                    <label for="confirmpwd">Confirm Password</label>
+                    <input type="password" id="confirmpwd" name="confirmpwd" required />
+                </p>
+                <button type="submit">Create Account</button>
+            </form>
+            <div>Already have an account? <a href="">Log in</a></div>
+        </div>
     </div>
-    <div>
-        You <em>know</em> you want to.
-    </div>
-    <h3>Let's do this!</h3>
-    <form action="random url" method="post">
-
-        <p>
-            <label for="first_name">First Name</label>
-            <input type="text" id="first_name" name="first_name" />
-        </p>
-
-        <p>
-            <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" name="last_name" />
-        </p>
-
-        <p>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-        </p>
-
-        <p>
-            <label for="phone_number">Phone Number</label>
-            <input type="tel" id="phone_number" name="phone_number" />
-        </p>
-
-        <p>
-            <label for="pwd">Password</label>
-            <input type="password" id="pwd" name="pwd" required />
-        </p>
-
-        <p>
-            <label for="confirmpwd">Confirm Password</label>
-            <input type="password" id="confirmpwd" name="confirmpwd" required />
-        </p>
-        <button>Create Account</button>
-        <div>Already have an account? <a href="randomurl">Log In</a></div>
-    </form>
-    
 </body>
 </html>
